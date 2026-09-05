@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lenny Tolio Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">Projects</a></li>
+							<li><a href="#two">About Me</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Lenny Tolio | Data Analysis</h1>
+							<h2>Excel - SQL - Python - Tableau - PowerBI</h2>
+							<p>Welcome in my Portfolio, have a look at my project(s)!<br /></p>
+							<ul class="actions special">
+								<li><a href="#one" class="button scrolly">See</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+				<section id="one" class="wrapper style2 spotlights">
+						<section>
+						
+							<a href="Excel.html" class="image"><img src="images/ExcelLogo.png" alt="ExcelLogo" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Excel</h2>
+									<p>Full project on Attrition using this <a href="https://kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset">Kaggle dataset</a>.<br />
+									Data Cleaning - Exploration - Dashboard on .xlsx file and external description.</p>
+									<ul class="actions">
+										<li><a href="Excel.html" class="button">See Project</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					
+				
+						<section>
+							<a class="image"><img src="images/SOON.png" alt="MTC" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>More Projects in the making</h2>
+									<p>SQL  —  Chinook Database, digital music store (GitHub)<br />
+										Python  —  Inside Airbnb, New York City listings<br />
+										Tableau  —  120 Years of Olympic History (Kaggle)<br />
+										Power BI  —  Global Electronics Retailer (Maven Analytics)<br />
+									</p>
+								</div>
+							</div>
+						
+						</section>
+				</section>
+
+				<!-- Divider between Projects and About Me -->
+					<hr class="section-divider" />
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<div class="about-header">
+								<h2>About Me</h2>
+								<!-- Sostituisci il percorso con la tua foto -->
+								<div class="about-photo">
+									<img src="images\FotoIo.jpg" alt="Lenny Tolio" />
+								</div>
+							</div>
+							<p>Skills and Interests</p>
+							<div class="about-blocks">
+								<div class="about-block">
+									<h3>Skills</h3>
+									<p>I have a scientific base to my education that I have always nourished also outside the school environment
+									My biggest Qualities are problem solving and critical and attentive work with high standards for both quality and effectiveness
+									Other parts of my persona that I really evaluete are creativity and artsy expression, that contribute to my complete and perfectionistic approach to tasks</p>
+								</div>
+								<div class="about-block">
+									<h3>Interests</h3>
+									<p>When I have some free time I like to watch football, originally a Napoli fan but really a fan of the sport
+										I also like to curate my fitness through healthy eating and consistent training, always down to try a new recipe!
+										My other big passion is music, I mostly find my listenings in the Italian unedrground scene, but I have a big spectrum of genres
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Divider -->
+			<hr class="section-divider" />
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="icons">
+						<li class="email-item">
+							<a href="#" class="icon solid fa-envelope" id="copy-email" title="Copia l'indirizzo email"><span class="label">Email</span></a><span class="email-text" id="copy-email-text">lenny24.tolio@libero.it</span>
+							<span class="copied-tip" id="copied-tip">Copiato negli appunti!</span>
+						</li>
+						<li><a href="https://www.linkedin.com/in/tuo-profilo" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Copy email to clipboard -->
+			<script>
+				(function () {
+					var email = "lenny24.tolio@libero.it";
+					var tip = document.getElementById("copied-tip");
+					var showTip = function () {
+						navigator.clipboard.writeText(email).then(function () {
+							tip.classList.add("visible");
+							setTimeout(function () { tip.classList.remove("visible"); }, 1800);
+						});
+					};
+					document.getElementById("copy-email").addEventListener("click", function (e) {
+						e.preventDefault();
+						showTip();
+					});
+					document.getElementById("copy-email-text").addEventListener("click", showTip);
+				})();
+			</script>
+
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Excel Project on Attrition</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="title">Excel</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main: intro + open/download -->
+					<section id="main" class="wrapper style1 fullscreen">
+						<div class="inner">
+							<h1 class="major">Excel — Employee Attrition Analysis</h1>
+							<p>HR Analysis on Employees Attrition: Data Cleaning, exploration and interactive dashboard entirely built in Excel.</p>
+							<ul class="actions">
+								<!-- Sostituisci il percorso con quello reale del tuo file .xlsx -->
+								<li><a href="C:\Users\lenny\Desktop\site\Excel_Project.xlsx" class="button primary" download>Download the Project (.xlsx)</a></li>
+								<li><a href="C:\Users\lenny\Desktop\site\Excel_Project.xlsx" class="button" target="_blank" rel="noopener">Open in a new tab</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Gallery: alternating image / text rows (replicable) -->
+					<section id="gallery" class="wrapper project-gallery">
+						<div class="whole">
+
+							<!-- Row 1: image left, caption right -->
+							<div class="row">
+								<div class="image">
+									<img src="images\Dashboard1.png" alt="Dashboard principale" />
+								</div>
+								<div class="caption">
+									<h3>Full Dashboard</h3>
+									<p>In all the dashboard I chose to use a Tax of attrition as a percent over the total, instead of number of employees because numbers would have been really different between departments purely based on the size of them, whereas a tax better showcases a trend or a tendency that can then be leading to a more structural problem to fix.
+										I added two slicers on gender and department to give more insightful views</p>
+								</div>
+							</div>
+
+							<!-- Row 2: caption left, image right (alternates automatically) -->
+							<div class="row">
+								<div class="image">
+									<img src="C:\Users\lenny\Desktop\site\images\g4.jpg" alt="Analisi per reparto" />
+								</div>
+								<div class="caption">
+									<h3>Overtime Effect</h3>
+									<p>This chart has a big visual impact; it shows how overtime affects attrition.
+									We can see it is roughly 3 times as much, and in a company with an attrition concern it could lead to even heavier impact on remaining employees as forming new employees or covering for ones who left.</p>
+								</div>
+							</div>
+
+							<!-- Row 3: image left, caption right -->
+							<div class="row">
+								<div class="image">
+									<img src="C:\Users\lenny\Desktop\site\images\g2.jpg" alt="Esplorazione dati" />
+								</div>
+								<div class="caption">
+									<h3>Job Role and Involvement</h3>
+									<p>Here it is highlighted which levels of involvement are most heavily affected by attrition with another subdivision per job level
+										We can see that it is mostly where the job level is lower where we have the biggest values, this means that the employees leaving aren’t covering key roles but in the long run the cost of recruiting and forming could become an issue. We see a similar trend with involvement in general and the considerations are similar.</p>
+								</div>
+							</div>
+
+							<!--
+								Per aggiungere un'altra foto: copia un intero blocco <div class="row">...</div>
+								e incollalo qui sotto. L'alternanza immagine/testo è automatica
+								(righe pari e dispari si invertono da sole, non serve cambiare nulla a mano).
+							-->
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="icons">
+						<li class="email-item">
+							<a href="#" class="icon solid fa-envelope" id="copy-email" title="Copia l'indirizzo email"><span class="label">Email</span></a><span class="email-text" id="copy-email-text">lenny24.tolio@libero.it</span>
+							<span class="copied-tip" id="copied-tip">Copiato negli appunti!</span>
+						</li>
+						<li><a href="https://www.linkedin.com/in/tuo-profilo" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Copy email to clipboard -->
+			<script>
+				(function () {
+					var email = "lenny24.tolio@libero.it";
+					var tip = document.getElementById("copied-tip");
+					var showTip = function () {
+						navigator.clipboard.writeText(email).then(function () {
+							tip.classList.add("visible");
+							setTimeout(function () { tip.classList.remove("visible"); }, 1800);
+						});
+					};
+					document.getElementById("copy-email").addEventListener("click", function (e) {
+						e.preventDefault();
+						showTip();
+					});
+					document.getElementById("copy-email-text").addEventListener("click", showTip);
+				})();
+			</script>
+
+	</body>
+</html>
