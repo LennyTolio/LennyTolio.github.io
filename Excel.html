@@ -7,12 +7,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16" />
+		<link rel="apple-touch-icon" href="images/favicon-180.png" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a class="title">Excel</a>
+				<a href="index.html" class="title">Excel</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -27,64 +30,62 @@
 					<section id="main" class="wrapper style1 fullscreen">
 						<div class="inner">
 							<h1 class="major">Excel — Employee Attrition Analysis</h1>
-							<p>HR Analysis on Employees Attrition: Data Cleaning, exploration and interactive dashboard entirely built in Excel.</p>
+							<p>HR Analysis on Employees Attrition: Data Cleaning, Exploration and Interactive Dashboard built fully indside Excel.</p>
 							<ul class="actions">
-								<!-- Sostituisci il percorso con quello reale del tuo file .xlsx -->
-								<li><a href="Excel_Project.xlsx" class="button primary" download>Download the Project (.xlsx)</a></li>
-								<li><a href="Excel_Project.xlsx" class="button" target="_blank" rel="noopener">Open in a new tab</a></li>
+								<li><a href="Excel_Project.xlsx" class="button primary" download>Scarica il progetto (.xlsx)</a></li>
+								<li><a href="Excel_Project.xlsx" class="button" target="_blank" rel="noopener">Apri in una nuova scheda</a></li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- Gallery: alternating image / text rows (replicable) -->
 					<section id="gallery" class="wrapper project-gallery">
-						<div class="whole">
+						<div class="inner">
 
 							<!-- Row 1: image left, caption right -->
 							<div class="row">
 								<div class="image">
-									<img src="images\Dashboard1.png" alt="Dashboard principale" />
+									<img src="images/Dashboard.png" alt="Dashboard principale" />
 								</div>
 								<div class="caption">
-									<h3>Full Dashboard</h3>
-									<p>In all the dashboard I chose to use a Tax of attrition as a percent over the total, instead of number of employees because numbers would have been really different between departments purely based on the size of them, whereas a tax better showcases a trend or a tendency that can then be leading to a more structural problem to fix.
-										I added two slicers on gender and department to give more insightful views</p>
+									<h3>La dashboard</h3>
+									<p>Descrivi qui cosa mostra questo screenshot: quali KPI, quali pivot, e l'insight principale che se ne ricava.</p>
 								</div>
 							</div>
 
 							<!-- Row 2: caption left, image right (alternates automatically) -->
 							<div class="row">
 								<div class="image">
-									<img src="images\g4.jpg" alt="Analisi per reparto" />
+									<img src="images/g2.jpg" alt="Analisi per reparto" />
 								</div>
 								<div class="caption">
-									<h3>Overtime Effect</h3>
-									<p>This chart has a big visual impact; it shows how overtime affects attrition.
-									We can see it is roughly 3 times as much, and in a company with an attrition concern it could lead to even heavier impact on remaining employees as forming new employees or covering for ones who left.</p>
+									<h3>Attrition per straordinari</h3>
+									<p>Il tasso di attrition è quasi 3 volte più alto tra chi fa straordinari (30,5%) rispetto a chi non ne fa (10,4%).</p>
 								</div>
 							</div>
 
 							<!-- Row 3: image left, caption right -->
 							<div class="row">
 								<div class="image">
-									<img src="images\g2.jpg" alt="Esplorazione dati" />
+									<img src="images/g4.jpg" alt="Esplorazione dati" />
 								</div>
 								<div class="caption">
-									<h3>Job Role and Involvement</h3>
-									<p>Here it is highlighted which levels of involvement are most heavily affected by attrition with another subdivision per job level
-										We can see that it is mostly where the job level is lower where we have the biggest values, this means that the employees leaving aren’t covering key roles but in the long run the cost of recruiting and forming could become an issue. We see a similar trend with involvement in general and the considerations are similar.</p>
+									<h3>Pulizia ed esplorazione</h3>
+									<p>Descrivi qui il processo di pulizia dati e le pivot table costruite in fase di esplorazione.</p>
 								</div>
 							</div>
 
-							<!--
-								Per aggiungere un'altra foto: copia un intero blocco <div class="row">...</div>
-								e incollalo qui sotto. L'alternanza immagine/testo è automatica
-								(righe pari e dispari si invertono da sole, non serve cambiare nulla a mano).
-							-->
+							<!---->
 
 						</div>
 					</section>
 
+			</div>
+
+		<!-- Lightbox  -->
+			<div id="lightbox">
+				<span class="lightbox-close">&times;</span>
+				<img id="lightbox-img" src="" alt="" />
 			</div>
 
 		<!-- Footer -->
@@ -93,9 +94,9 @@
 					<ul class="icons">
 						<li class="email-item">
 							<a href="#" class="icon solid fa-envelope" id="copy-email" title="Copia l'indirizzo email"><span class="label">Email</span></a><span class="email-text" id="copy-email-text">lenny24.tolio@libero.it</span>
-							<span class="copied-tip" id="copied-tip">Copiato negli appunti!</span>
+							<span class="copied-tip" id="copied-tip">Copied!</span>
 						</li>
-						<li><a href="https://www.linkedin.com/in/tuo-profilo" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<!--	<li><a href="https://www.linkedin.com/in/tuo-profilo" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>-->
 					</ul>
 				</div>
 			</footer>
