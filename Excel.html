@@ -48,30 +48,33 @@
 									<img src="images/Dashboard.png" alt="Dashboard principale" />
 								</div>
 								<div class="caption">
-									<h3>La dashboard</h3>
-									<p>Descrivi qui cosa mostra questo screenshot: quali KPI, quali pivot, e l'insight principale che se ne ricava.</p>
+									<h3>Full Dashboard</h3>
+									<p>In all the dashboard I chose to use a Tax of attrition as a percent over the total, instead of number of employees because numbers would have been really different between departments purely based on the size of them, whereas a tax better showcases a trend or a tendency that can then be leading to a more structural problem to fix.
+										I added two slicers on gender and department to give more insightful views</p>
 								</div>
 							</div>
 
 							<!-- Row 2: caption left, image right (alternates automatically) -->
 							<div class="row">
 								<div class="image">
-									<img src="images/g2.jpg" alt="Analisi per reparto" />
+									<img src="images/g4.jpg" alt="Analisi per reparto" />
 								</div>
 								<div class="caption">
-									<h3>Attrition per straordinari</h3>
-									<p>Il tasso di attrition è quasi 3 volte più alto tra chi fa straordinari (30,5%) rispetto a chi non ne fa (10,4%).</p>
+									<h3>Overtime Effect</h3>
+									<p>This chart has a big visual impact; it shows how overtime affects attrition.
+									We can see it is roughly 3 times as much, and in a company with an attrition concern it could lead to even heavier impact on remaining employees as forming new employees or covering for ones who left.</p>
 								</div>
 							</div>
 
 							<!-- Row 3: image left, caption right -->
 							<div class="row">
 								<div class="image">
-									<img src="images/g4.jpg" alt="Esplorazione dati" />
+									<img src="images/g2.jpg" alt="Esplorazione dati" />
 								</div>
 								<div class="caption">
-									<h3>Pulizia ed esplorazione</h3>
-									<p>Descrivi qui il processo di pulizia dati e le pivot table costruite in fase di esplorazione.</p>
+									<h3>Job Role and Involvement</h3>
+									<p>Here it is highlighted which levels of involvement are most heavily affected by attrition with another subdivision per job level
+										We can see that it is mostly where the job level is lower where we have the biggest values, this means that the employees leaving aren’t covering key roles but in the long run the cost of recruiting and forming could become an issue. We see a similar trend with involvement in general and the considerations are similar.</p>
 								</div>
 							</div>
 
@@ -110,6 +113,26 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<!-- Lightbox: click a gallery image to view it full-screen, uncropped -->
+			<script>
+				(function () {
+					var lightbox = document.getElementById("lightbox");
+					var lightboxImg = document.getElementById("lightbox-img");
+					document.querySelectorAll(".project-gallery .image img").forEach(function (img) {
+						img.addEventListener("click", function () {
+							lightboxImg.src = img.getAttribute("src");
+							lightboxImg.alt = img.getAttribute("alt") || "";
+							lightbox.classList.add("active");
+						});
+					});
+					lightbox.addEventListener("click", function () {
+						lightbox.classList.remove("active");
+					});
+					document.addEventListener("keydown", function (e) {
+						if (e.key === "Escape") lightbox.classList.remove("active");
+					});
+				})();
+			</script>
 		<!-- Copy email to clipboard -->
 			<script>
 				(function () {
